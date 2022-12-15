@@ -1,0 +1,254 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'Circular-book';
+    src: url(../Circular/CircularStd-Book.otf);
+}
+
+@font-face {
+    font-family: 'circular-black';
+    src: url(../Circular/CircularStd-Black.otf);
+}
+
+@font-face {
+    font-family: 'circular-bold';
+    src: url(../Circular/CircularStd-Bold.otf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ /* -------- HEADER E BODY -------- */
+body {
+    font-family: 'Circular-book';
+    width: 100vw;
+    height: 100vh;
+}
+
+header {
+    width: 100%;
+    height: 60px;
+    background-color: black;
+    padding: 9px;
+    display: flex;
+    justify-content: space-between;
+}
+
+header > img#user {
+    border-radius: 50%;
+}
+
+/* --------- SECTIONS --------*/
+
+#first {
+    background-color: #df0c8b;
+    color: white;
+    font-size: 1.3em;
+    padding: 20px 15px 20px 15px;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#first p, #first button, #first #image {
+    margin-top: 20px;
+}
+
+#first #image {
+    height: 350px;
+    width: 90%;
+    background: url(../images/first-session-image.jpeg) no-repeat center center;
+    background-size: contain;
+    background-attachment: local;
+}
+
+#second {
+    width: 100%;
+    padding: 25px 10px;
+    text-align: center;
+}
+
+#third {
+    width: 100%;
+    background-color: #efefef;
+    padding: 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.small-text {
+    font-size: 0.7em;
+}
+
+
+.motivos-premium{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin: 30px 0 30px 0;
+}
+
+.motivos-premium div {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.motivos-premium > img {
+    width: 100px;
+    margin-right: 20px;
+}
+
+
+
+/* ----------BUTTONS ---------- */
+.buttons{
+    color: white;
+    font-family: 'circular-bold';
+    font-size: 0.7em;
+    background-color: black;
+    width: 100%;
+    height: 50px;
+    border-radius: 40px;
+    border: none;
+}
+
+#button2 {
+    background-color: transparent;
+    border: 2px solid white;
+}
+
+.buttons:hover {
+    transform: scale(1.03);
+}
+
+/* ------- CARDS ------ */
+
+.cards {
+    width: 350px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.281);
+    margin: 20px 10px 1px 10px;
+    padding: 15px;
+    text-align: left;
+}
+
+
+
+.first-list {
+    display: flex;
+}
+
+
+.first-list li:nth-child(1), .first-list li:nth-child(2) {
+    background-color: rgb(13, 114, 234);
+    color: white;
+    font-family: 'circular-black';
+    font-weight: bold;
+    font-size: 12px;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 0px 4px 10px 0px;
+}
+
+.first-list li:nth-child(2) {
+    background-color: transparent;
+    border: 2px solid rgb(13, 114, 234);
+    color: rgb(13, 114, 234);
+}
+
+.second-list li {
+    display: flex;
+    line-height: 1.5em;
+    margin-bottom: 5px;
+}
+
+.second-list div {
+    padding-right: 10px;
+}
+
+.cards button {
+    font-size: 0.9em;
+    margin: 20px 0px;
+}
+
+
+
+.cards > .small-text, .cards > .small-text a{
+    color: gray;
+}
+
+hr {
+    color: black;
+    margin: 20px 0px 20px 0px;
+}
+
+ul {
+    list-style: none;
+}
+
+
+/* --------- FOOTER --------- */
+footer {
+    background-color: black;
+    padding: 50px 0px 10px 20px;
+}
+
+footer img {
+    width: 100px;
+}
+
+footer li {
+    color: white;
+    margin: 20px 0px 20px 0px;
+    font-family: 'Circular-book';
+}
+
+footer li:hover {
+    color: rgb(0, 187, 0);
+}
+
+
+footer ul {
+    margin-bottom: 60px;
+}
+
+footer ul h5 {
+    color: gray;
+    font-family: 'circular-black';
+}
+
+footer ul h5:hover {
+    text-decoration: underline;
+}
+
+.social {
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.social li {
+    margin-right: 40px;
+}
+
+ 
+.social img {
+    width: 40px;
+    background: white;
+    border-radius: 50%;
+}
+
+.social img:hover {
+    background: rgb(0, 187, 0);
+}
