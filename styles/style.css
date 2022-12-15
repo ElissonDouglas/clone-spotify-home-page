@@ -38,9 +38,15 @@ header {
 
 header > img#user {
     border-radius: 50%;
+    cursor: pointer;
 }
 
+
 /* --------- SECTIONS --------*/
+
+a {
+    color: white;
+}
 
 #first {
     background-color: #df0c8b;
@@ -212,6 +218,7 @@ footer li {
     color: white;
     margin: 20px 0px 20px 0px;
     font-family: 'Circular-book';
+    cursor: pointer;
 }
 
 footer li:hover {
