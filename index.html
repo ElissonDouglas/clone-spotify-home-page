@@ -6,24 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotify Premium</title>
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/media-query.css">
     <link rel="shortcut icon" href="images/favicon.png" type="image/png">
 </head>
 <body>
     <header>
         <img width="120px" height="35px" src="images/Spotify_Logo_CMYK_White.png" alt="Logo spotify">
-        <img id="user" width="40px" src="images/user-pfp.jpeg" alt="Foto do usuário">
+        <div>
+            <ul class="header-list">
+                <li><a href="">Premium</a></li>
+                <li><a href="">Suporte</a></li>
+                <li><a href="">Baixar</a></li>
+                <li><img id="user" width="40px" src="images/user-pfp.jpeg" alt="Foto do usuário"></li>
+            </ul>
+            
+        </div>
     </header>
     <main>
         <section id="first">
-            <div>
-                <h1>R$ 0,00 por 3 meses de Premium</h1>
-                <p>Curta músicas sem anúncios, ouça no modo offline e muito mais. Cancele quando quiser.</p>
-                <button class="buttons">EXPERIMENTE 3 MESES POR R$ 0,00</button>
-                <button class="buttons" id="button2">VER PLANOS</button>
-                <p class="small-text">Somente no plano Individual. Depois é só R$ 19,90/mês. <a href=""><u>Sujeito a termos e Condições</u></a>. Disponível apenas para quem nunca usou o Premium. A oferta termina em 31/12/2022.</p>
-            </div>
-            <div id="image">
-                <!--Aqui vai a imagem-->
+            <div id="main">
+                <div id="content">
+                    <h1>R$ 0,00 por 3 meses de Premium</h1>
+                    <p id="normal">Curta músicas sem anúncios, ouça no modo offline e muito mais. Cancele quando quiser.</p>
+                    <button class="buttons" id="button1">EXPERIMENTE 3 MESES POR R$ 0,00</button>
+                    <button class="buttons" id="button2">VER PLANOS</button>
+                    <p class="small-text">Somente no plano Individual. Depois é só R$ 19,90/mês. <a href=""><u>Sujeito a termos e Condições</u></a>. Disponível apenas para quem nunca usou o Premium. A oferta termina em 31/12/2022.</p>
+                </div>
+                <div id="image">
+                    <!--Aqui vai a imagem-->
+                </div>
             </div>
         </section>
         <section id="second">
@@ -60,134 +71,125 @@
             </div>
         </section>
         <section id="third">
-            <h1>Escolha seu plano Premium</h1>
-            <p>Ouça sem limites no seu celular, alto-falante e em outros dispositivos.</p>
-            <div id="payment-methods">
-                <!--Aqui vão os icones de cartoes-->
-            </div>
-            <div class="cards">
-                <div>
-                    <ul class="first-list">
-                        <li class="free-months">3 meses grátis</li>
-                        <li class="card-payment">Pagamento único disponível</li>
-                    </ul>
-                    <h3>Individual</h3>
-                    <p>R$ 19,90/mês após o período da oferta</p>
-                    <p>1 conta</p>
+            <div id="div1">
+                <h1>Escolha seu plano Premium</h1>
+                <p>Ouça sem limites no seu celular, alto-falante e em outros dispositivos.</p>
+                <div id="payment-methods">
+                    <!--Aqui vão os icones de cartoes-->
                 </div>
-                <hr>
-                <ul class="second-list">
-                    <li><div><img src="images/check-svgrepo-com.svg" alt=""></div><p>Ouça músicas sem anúncios</p></li>
-
-                    <li><div><img src="images/check-svgrepo-com.svg" alt=""></div><p>Ouça em qualquer lugar - até quando estiver offline</p></li> 
-
-                    <li><div><img src="images/check-svgrepo-com.svg" alt=""></div><p>Ouça músicas na ordem que quiser</p></li>
-
-                    <li><div><img src="images/check-svgrepo-com.svg" alt=""></div><p>Faça um plano pré-pago ou uma assinatura</p></li>
-                </ul>
-                <button class="buttons">COMECE AGORA</button>
-                <p class="small-text">Somente no plano Individual. Depois é só R$ 19,90/mês. <a href="#"><u>Sujeito a termos e Condições</u></a>. Disponível apenas para quem nunca usou o Premium. A oferta termina em 31/12/2022.</p>
             </div>
-            <div class="cards">
-                <div>
-                    <ul class="first-list">
-                        <li class="free-months">1 mês grátis ao assinar</li>
-                        <li class="card-payment">Pagamento único disponível</li>
+            <div id="container">
+                <div class="cards">
+                    <div>
+                        <ul class="first-list">
+                            <li class="free-months">3 meses grátis</li>
+                            <li class="card-payment">Pagamento único disponível</li>
+                        </ul>
+                        <h3>Individual</h3>
+                        <p>R$ 19,90/mês após o período da oferta</p>
+                        <p>1 conta</p>
+                    </div>
+                    <hr>
+                    <ul class="second-list">
+                        <li><div><img src="images/check-svgrepo-com.svg" alt=""></div><p>Ouça músicas sem anúncios</p></li>
+                        <li><div><img src="images/check-svgrepo-com.svg" alt=""></div><p>Ouça em qualquer lugar - até quando estiver offline</p></li>
+                        <li><div><img src="images/check-svgrepo-com.svg" alt=""></div><p>Ouça músicas na ordem que quiser</p></li>
+                        <li><div><img src="images/check-svgrepo-com.svg" alt=""></div><p>Faça um plano pré-pago ou uma assinatura</p></li>
                     </ul>
-                    <h3>Duo</h3>
-                    <p>R$ 24,90/mês após o período da oferta</p>
-                    <p>2 contas</p>
+                    <button class="buttons">COMECE AGORA</button>
+                    <p class="small-text">Somente no plano Individual. Depois é só R$ 19,90/mês. <a href="#"><u>Sujeito a termos e Condições</u></a>. Disponível apenas para quem nunca usou o Premium. A oferta termina em 31/12/2022.</p>
                 </div>
-                <hr>
-                <ul class="second-list">
-                    <li><div><img src="images/check-svgrepo-com.svg" alt=""></div><p>2 contas Premium para pessoas que moram juntas</p></li>
-
-                    <li><div><img src="images/check-svgrepo-com.svg" alt=""></div><p>Música sem anúncios, no modo offline e na ordem que você quiser</p></li> 
-
-                    <li><div><img src="images/check-svgrepo-com.svg" alt=""></div><p>Faça um plano pré-pago ou uma assinatura</p></li>
-                </ul>
-                <button class="buttons">COMECE AGORA</button>
-                <p class="small-text"><a href="#"><u>Sujeito a Termos e Condições</u></a>. O mês grátis não está disponível para usuários que já usaram o Premium.</p>
-            </div>
-            <div class="cards">
-                <div>
-                    <ul class="first-list">
-                        <li class="free-months">1 mês grátis ao assinar</li>
-                        <li class="card-payment">Pagamento único disponível</li>
+                <div class="cards">
+                    <div>
+                        <ul class="first-list">
+                            <li class="free-months">1 mês grátis ao assinar</li>
+                            <li class="card-payment">Pagamento único disponível</li>
+                        </ul>
+                        <h3>Duo</h3>
+                        <p>R$ 24,90/mês após o período da oferta</p>
+                        <p>2 contas</p>
+                    </div>
+                    <hr>
+                    <ul class="second-list">
+                        <li><div><img src="images/check-svgrepo-com.svg" alt=""></div><p>2 contas Premium para pessoas que moram juntas</p></li>
+                        <li><div><img src="images/check-svgrepo-com.svg" alt=""></div><p>Música sem anúncios, no modo offline e na ordem que você quiser</p></li>
+                        <li><div><img src="images/check-svgrepo-com.svg" alt=""></div><p>Faça um plano pré-pago ou uma assinatura</p></li>
                     </ul>
-                    <h3>Família</h3>
-                    <p>R$ 34,90/mês após o período da oferta</p>
-                    <p>Até 6 contas</p>
+                    <button class="buttons">COMECE AGORA</button>
+                    <p class="small-text"><a href="#"><u>Sujeito a Termos e Condições</u></a>. O mês grátis não está disponível para usuários que já usaram o Premium.</p>
                 </div>
-                <hr>
-                <ul class="second-list">
-                    <li><div><img src="images/check-svgrepo-com.svg" alt=""></div><p>6 contas Premium para familiares que moram no mesmo endereço</p></li>
-
-                    <li><div><img src="images/check-svgrepo-com.svg" alt=""></div><p>Bloqueie músicas com conteúdo explícito</p></li> 
-
-                    <li><div><img src="images/check-svgrepo-com.svg" alt=""></div><p>Música sem anúncios, no modo offline e na ordem que você quiser</p></li>
-                    
-                    <li><div><img src="images/check-svgrepo-com.svg" alt=""></div><p>Spotify Kids: um app separado, feito especialmente para crianças</p></li> 
-
-                    <li><div><img src="images/check-svgrepo-com.svg" alt=""></div><p>Faça um plano pré-pago ou uma assinatura</p></li>
-                </ul>
-                <button class="buttons">COMECE AGORA</button>
-                <p class="small-text"><a href="#"><u>Sujeito a Termos e Condições</u></a>. O mês grátis não está disponível para usuários que já usaram o Premium.</p>
-            </div>
-
-            <div class="cards">
-                <div>
-                    <ul class="first-list">
-                        <li class="free-months">1 mês grátis ao assinar</li>
+                <div class="cards">
+                    <div>
+                        <ul class="first-list">
+                            <li class="free-months">1 mês grátis ao assinar</li>
+                            <li class="card-payment">Pagamento único disponível</li>
+                        </ul>
+                        <h3>Família</h3>
+                        <p>R$ 34,90/mês após o período da oferta</p>
+                        <p>Até 6 contas</p>
+                    </div>
+                    <hr>
+                    <ul class="second-list">
+                        <li><div><img src="images/check-svgrepo-com.svg" alt=""></div><p>6 contas Premium para familiares que moram no mesmo endereço</p></li>
+                        <li><div><img src="images/check-svgrepo-com.svg" alt=""></div><p>Bloqueie músicas com conteúdo explícito</p></li>
+                        <li><div><img src="images/check-svgrepo-com.svg" alt=""></div><p>Música sem anúncios, no modo offline e na ordem que você quiser</p></li>
+                
+                        <li><div><img src="images/check-svgrepo-com.svg" alt=""></div><p>Spotify Kids: um app separado, feito especialmente para crianças</p></li>
+                        <li><div><img src="images/check-svgrepo-com.svg" alt=""></div><p>Faça um plano pré-pago ou uma assinatura</p></li>
                     </ul>
-                    <h3>Universitário</h3>
-                    <p>R$ 9,90/mês após o período da oferta</p>
-                    <p>1 conta</p>
+                    <button class="buttons">COMECE AGORA</button>
+                    <p class="small-text"><a href="#"><u>Sujeito a Termos e Condições</u></a>. O mês grátis não está disponível para usuários que já usaram o Premium.</p>
                 </div>
-                <hr>
-                <ul class="second-list">
-                    <li><div><img src="images/check-svgrepo-com.svg" alt=""></div><p>Desconto especial para estudantes universitários elegíveis</p></li>
-
-                    <li><div><img src="images/check-svgrepo-com.svg" alt=""></div><p>Ouça músicas sem anúncios</p></li> 
-
-                    <li><div><img src="images/check-svgrepo-com.svg" alt=""></div><p>Ouça em qualquer lugar - até quando estiver offline</p></li>
-                    
-                    <li><div><img src="images/check-svgrepo-com.svg" alt=""></div><p>Ouça músicas na ordem que quiser</p></li> 
-
-                </ul>
-                <button class="buttons">COMECE AGORA</button>
-                <p class="small-text">Oferta disponível somente para estudantes de instituições de ensino superior credenciadas. O mês grátis não está disponível para usuários que já experimentaram o Premium. <a href="#"><u>Sujeito aos Termos e Condições</u></a> da oferta do Spotify de desconto para universitários.</p>
-            </div>
-        </section>
-        <footer>
-            <div><img src="images/Spotify_Logo_CMYK_White.png" alt=""></div>
-            <div>
-                <ul>
-                    <li><h5>EMPRESAS</h5></li>
-                    <li>Sobre</li>
-                    <li>Empregos</li>
-                    <li>For the record</li>
-                </ul>
-                <ul>
-                    <li><h5>COMUNIDADES</h5></li>
-                    <li>Para Artistas</li>
-                    <li>Desenvolvedores</li>
-                    <li>Publicidade</li>
-                    <li>Investidores</li>
-                    <li>Fornecedores</li>
-                </ul>
-
-                <ul>
-                    <li><h5>LINKS ÚTEIS</h5></li>
-                    <li>Suporte</li>
-                    <li>Player da Web</li>
-                    <li>Aplicativo móvel grátis</li>
-                </ul>
-                <ul class="social">
-                    <li><img src="images/instagram.png" alt="Instagram"></li>
-                    <li><img src="images/twitter.png" alt="Twitter"></li>
-                    <li><img src="images/facebook-app-symbol.png" alt="Facebook"></li>
-                </ul>
+                <div class="cards">
+                    <div>
+                        <ul class="first-list">
+                            <li class="free-months">1 mês grátis ao assinar</li>
+                        </ul>
+                        <h3 id="l4">Universitário</h3>
+                        <p>R$ 9,90/mês após o período da oferta</p>
+                        <p>1 conta</p>
+                    </div>
+                    <hr>
+                    <ul class="second-list">
+                        <li><div><img src="images/check-svgrepo-com.svg" alt=""></div><p>Desconto especial para estudantes universitários elegíveis</p></li>
+                        <li><div><img src="images/check-svgrepo-com.svg" alt=""></div><p>Ouça músicas sem anúncios</p></li>
+                        <li><div><img src="images/check-svgrepo-com.svg" alt=""></div><p>Ouça em qualquer lugar - até quando estiver offline</p></li>
+                
+                        <li><div><img src="images/check-svgrepo-com.svg" alt=""></div><p>Ouça músicas na ordem que quiser</p></li>
+                    </ul>
+                    <button class="buttons">COMECE AGORA</button>
+                    <p class="small-text">Oferta disponível somente para estudantes de instituições de ensino superior credenciadas. O mês grátis não está disponível para usuários que já experimentaram o Premium. <a href="#"><u>Sujeito aos Termos e Condições</u></a> da oferta do Spotify de desconto para universitários.</p>
+                </div>
+                        </section>
+                        <footer>
+                <div><img src="images/Spotify_Logo_CMYK_White.png" alt=""></div>
+                <div>
+                    <ul>
+                        <li><h5>EMPRESAS</h5></li>
+                        <li>Sobre</li>
+                        <li>Empregos</li>
+                        <li>For the record</li>
+                    </ul>
+                    <ul>
+                        <li><h5>COMUNIDADES</h5></li>
+                        <li>Para Artistas</li>
+                        <li>Desenvolvedores</li>
+                        <li>Publicidade</li>
+                        <li>Investidores</li>
+                        <li>Fornecedores</li>
+                    </ul>
+                    <ul>
+                        <li><h5>LINKS ÚTEIS</h5></li>
+                        <li>Suporte</li>
+                        <li>Player da Web</li>
+                        <li>Aplicativo móvel grátis</li>
+                    </ul>
+                    <ul class="social">
+                        <li><img src="images/instagram.png" alt="Instagram"></li>
+                        <li><img src="images/twitter.png" alt="Twitter"></li>
+                        <li><img src="images/facebook-app-symbol.png" alt="Facebook"></li>
+                    </ul>
+                </div>
             </div>
         </footer>
     </main>
